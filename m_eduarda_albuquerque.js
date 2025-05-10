@@ -32,3 +32,8 @@ function ePrimo(n){
 console.log("\nResultado do exercício número três:")
 console.log(ePrimo(7));
 console.log(ePrimo(10));
+
+
+
+//4️⃣FizzBuzz
+
