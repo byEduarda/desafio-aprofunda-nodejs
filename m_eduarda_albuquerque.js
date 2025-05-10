@@ -51,3 +51,19 @@ function FizzBuzz(nms){
 }
 console.log("\nResultado do exercicío quatro:")
 FizzBuzz()
+
+
+
+//5️⃣Contador de Vogais
+
+function contaVogais(texto){
+    const vogais = 'aeiouáéíóúàèìòùâêîôûãõAEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕ';
+    let contador = 0;
+
+    for(let i = 0; i < texto.legth; i++){
+        if(vogais.includes(texto[i])){
+            contador++;
+        }
+    }
+    return contador;
+}
