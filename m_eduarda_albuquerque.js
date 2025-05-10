@@ -49,3 +49,4 @@ function FizzBuzz(nms){
             }
     }
 }
+FizzBuzz()
