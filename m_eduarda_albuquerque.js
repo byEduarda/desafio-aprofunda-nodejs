@@ -1,4 +1,4 @@
-//1️⃣Imprimindo Números Pares
+//1️⃣ Imprimindo Números Pares
 
 function ImprimePares(n){
     for(let i = 0; i <= n; i++){   //usa o indice 'i' para percorrer os numeros ate 'n'
@@ -10,7 +10,7 @@ ImprimePares(10)
 
 
 
-//2️⃣Soma dos Números de um Array
+//2️⃣ Soma dos Números de um Array
 
 function somaArray(array){
     return array.reduce((acumulador, n) => acumulador + n, 0); //soma de forma automatica atraves do reduce
@@ -20,7 +20,7 @@ console.log(somaArray([1, 2, 5, 10]))
 
 
 
-//3️⃣identificar Número Primo
+//3️⃣ identificar Número Primo
 
 function ePrimo(n){
     if(n < 2) return false; //retorna falso se o numero for menor que 2 pois nao existe numero primo menor que 2
@@ -35,7 +35,7 @@ console.log(ePrimo(10));
 
 
 
-//4️⃣FizzBuzz
+//4️⃣ FizzBuzz
 
 function FizzBuzz(nms){
     for(let i = 0; i <= 50; i++){
@@ -54,7 +54,7 @@ FizzBuzz()
 
 
 
-//5️⃣Contador de Vogais
+//5️⃣ Contador de Vogais
 
 function contaVogais(texto){
     const vogais = 'aeiouáéíóúàèìòùâêîôûãõAEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕ';
@@ -72,7 +72,7 @@ console.log(contaVogais("Node.js é incrível"));
 
 
 
-//6️⃣Tabuada de um Número
+//6️⃣ Tabuada de um Número
 
 function tabuada(n){
     for(let i = 1; i <= 10; i++){
@@ -84,10 +84,28 @@ tabuada(5)
 
 
 
-//7️⃣Inverter String
+//7️⃣ Inverter String
 
 function inverterString(texto){
     return texto.split("").reverse().join("");
 }
 console.log("\nResultado do exercicío número sete:");
 console.log(inverterString("hello"));
+
+
+
+//8️⃣ Encontre o Maior Número
+
+function maiorNumero(array){
+    return Math.max(...array);
+}
+console.log("\nResultado do exercicío número oito:");
+console.log(maiorNumero([3, 10, 6, 2]));
+
+
+
+//9️⃣ Palíndromo
+
+function ePalindromo(texto){
+    
+}
