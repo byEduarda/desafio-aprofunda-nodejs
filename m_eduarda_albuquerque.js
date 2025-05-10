@@ -69,3 +69,25 @@ function contaVogais(texto){
 }
 console.log("\nResultado do exercicío cinco:");
 console.log(contaVogais("Node.js é incrível")); 
+
+
+
+//6️⃣Tabuada de um Número
+
+function tabuada(n){
+    for(let i = 1; i <= 10; i++){
+        console.log("5 x " + i + " = " + n * [i]);
+    }
+}
+console.log("\nResultado do exercicío seis:")
+tabuada(5)
+
+
+
+//7️⃣Inverter String
+
+function inverterString(texto){
+    return texto.split("").reverse().join("");
+}
+console.log("\nResultado do exercicío número sete:");
+console.log(inverterString("hello"));
