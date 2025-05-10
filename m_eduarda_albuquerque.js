@@ -49,4 +49,5 @@ function FizzBuzz(nms){
             }
     }
 }
+console.log("\nResultado do exercicío quatro:")
 FizzBuzz()
