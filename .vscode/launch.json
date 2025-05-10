@@ -4,8 +4,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/m.eduarda.albuquerque.js"
+      "name": "Executar Arquivo Atual",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${file}"
     }
   ]
 }
