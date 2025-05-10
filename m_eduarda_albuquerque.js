@@ -13,8 +13,22 @@ ImprimePares(10)
 //2️⃣Soma dos Números de um Array
 
 function somaArray(array){
-    return array.reduce((acumulador, n) => acumulador + n, 0);
+    return array.reduce((acumulador, n) => acumulador + n, 0); //soma de forma automatica atraves do reduce
 }
-
 console.log("\nResultado do exercicío número dois:")
 console.log(somaArray([1, 2, 5, 10]))
+
+
+
+//3️⃣identificar Número Primo
+
+function ePrimo(n){
+    if(n < 2) return false; //retorna falso se o numero for menor que 2 pois nao existe numero primo menor que 2
+     for(let i = 0; i <= Math.sqrt(n); i++){ //verifica se o 'n' tem um divisor alem da raiz 
+        if(n % 2 === 0) return false;
+    }
+    return true;
+}
+console.log("\nResultado do exercício número três:")
+console.log(ePrimo(7));
+console.log(ePrimo(10));
