@@ -12,9 +12,9 @@ ImprimePares(10)
 
 //2️⃣Soma dos Números de um Array
 
-function somaArray(arr){
-    return arr.reduce((acc, num) => acc + num, 0);
+function somaArray(array){
+    return array.reduce((acumulador, n) => acumulador + n, 0);
 }
 
 console.log("\nResultado do exercicío número dois:")
-console.log(somaArray([1, 2, 5, 1]))
+console.log(somaArray([1, 2, 5, 10]))
