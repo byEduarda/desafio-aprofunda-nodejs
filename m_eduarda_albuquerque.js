@@ -60,10 +60,12 @@ function contaVogais(texto){
     const vogais = 'aeiouáéíóúàèìòùâêîôûãõAEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕ';
     let contador = 0;
 
-    for(let i = 0; i < texto.legth; i++){
+    for(let i = 0; i < texto.length; i++){
         if(vogais.includes(texto[i])){
             contador++;
         }
     }
     return contador;
 }
+console.log("\nResultado do exercicío cinco:");
+console.log(contaVogais("Node.js é incrível")); 
