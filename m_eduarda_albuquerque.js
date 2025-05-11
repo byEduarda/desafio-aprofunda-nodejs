@@ -39,7 +39,7 @@ console.log(ePrimo(10));
 
 function FizzBuzz(nms){
     for(let i = 0; i <= 50; i++){
-        if(i % 3 === 0 && i % 5 === 0) {console.log("fizzBuzz");
+        if(i % 3 === 0 && i % 5 === 0) {console.log("fizzBuzz"); //nos tres casos verifica se o numero é divisivel e printa o nome escolhido
             }else if(i % 3 === 0){
                 console.log("fizz");
             }else if(i % 5 === 0){
@@ -57,11 +57,11 @@ FizzBuzz()
 //5️⃣ Contador de Vogais
 
 function contaVogais(texto){
-    const vogais = 'aeiouáéíóúàèìòùâêîôûãõAEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕ';
-    let contador = 0;
+    const vogais = 'aeiouáéíóúàèìòùâêîôûãõAEIOUÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕ'; //define por padrao as vogais
+    let contador = 0; //conta as vogais encontradas
 
     for(let i = 0; i < texto.length; i++){
-        if(vogais.includes(texto[i])){
+        if(vogais.includes(texto[i])){ //olha a letra na posicao 'i' e verfica se ela esta incluida na cosnt vogais
             contador++;
         }
     }
@@ -87,7 +87,7 @@ tabuada(5)
 //7️⃣ Inverter String
 
 function inverterString(texto){
-    return texto.split("").reverse().join("");
+    return texto.split("").reverse().join(""); //divide a string em caracteres, inverte e junta novamente.
 }
 console.log("\nResultado do exercicío número sete:");
 console.log(inverterString("hello"));
@@ -97,7 +97,7 @@ console.log(inverterString("hello"));
 //8️⃣ Encontre o Maior Número
 
 function maiorNumero(array){
-    return Math.max(...array);
+    return Math.max(...array); //usa o operador spread para passar os elementos do array para `Math.max`.
 }
 console.log("\nResultado do exercicío número oito:");
 console.log(maiorNumero([3, 10, 6, 2]));
@@ -107,5 +107,27 @@ console.log(maiorNumero([3, 10, 6, 2]));
 //9️⃣ Palíndromo
 
 function ePalindromo(texto){
-    
+    const uniforme = texto.toLowerCase().replace(/[^a-z0-9]/g, ""); //remove espaços e caracteres não alfanuméricos.
+    return uniforme === uniforme.split("").reverse().join("")  //compara a string original formatada com sua versão invertida.
 }
+console.log("\nExercicío número nove:")
+console.log(ePalindromo("Ame a ema"));
+console.log(ePalindromo("Olá mundo"));
+
+
+
+// 🔟 Média de Notas
+
+function calcularMedia(notas){
+    const media = somaArray(notas) / notas.length;  //recebe e soma e a media do array
+    if(media >= 7){
+        console.log("Aprovado - Média: " + media); 
+    }
+    else{
+        console.log("Reprovado - Média: " + media)
+    }
+    return media;
+}
+console.log("\nExercicío número dez:")
+console.log(calcularMedia([8, 7, 6]));
+console.log(calcularMedia([5, 6, 4]));
